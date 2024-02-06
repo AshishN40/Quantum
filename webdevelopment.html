@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quantum Webdevelopment </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">QuantumAshish</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Topics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="technology.html">Technology</a></li>
+                  <li><a class="dropdown-item" href="webdevelopment.html">Web Development</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <!-- <a class="dropdown-item" href="programming.html">Programming  Languages</a> -->
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contactus </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-danger" type="submit">
+                Search
+              </button>
+            </form>
+            <div class="mx-2">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  login
+                </button>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupModal">
+                  signup
+                </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+  <!-- login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login to your Account </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+  
+          <!-- Email -->
+  
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <!-- password -->
+          <label for="inputPassword5" class="form-label">Password</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+          <div id="passwordHelpBlock" class="form-text">
+            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+          </div>
+          <div class="modal-footer">
+            
+            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!-- signupModal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create Your Account </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Account -->
+          <form>
+            <div class="mb-3">
+              <label for="Name" class="form-label">Name</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text"></div>
+  
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+  
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+          </form>
+  
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <!-- row Feature 1-->
+     <div class="container my-4">
+      <div class="row featurette d-flex justify-content-centre align-items-centre">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">HTML <span class="text-muted">CREATING WEBSITE.</span></h2>
+          <p class="lead">HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is a combination of Hypertext and Markup language. Hypertext defines the link between web pages. A markup language is used to define the text document within the tag which defines the structure of web pages. This language is used to annotate (make notes for the computer) text so that a machine can understand it and manipulate text accordingly. Most markup languages (e.g. HTML) are human-readable. The language uses tags to define what manipulation has to be done on the text.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="htmlimage.jpg" class="img-fluid" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+   
+
+        <!-- row Feature 2-->
+        <div class="container my-4">
+          <div class="row featurette d-flex justify-content-centre align-items-centre">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">CSS <span class="text-muted">DESINING WEBSITE.</span></h2>
+              <p class="lead">CSS stands for “Cascading Style Sheet”. It is used to style HTML Documents. CSS simplifies the process of making web pages presentable. It describes how web pages should look it prescribes colors, fonts, spacing, and much more.CSS3 is the latest version of CSS. It holds many advantages over its predecessor. CSS3 started to gain popularity in early 2010. At that time, some of the browsers did not even use to support CSS3 and so it took a while for the web developer community to start implementing this in their projects. Here, we will see the advantages of CSS3 over CSS, and also discuss why CSS3 gained such huge popularity in a short amount of time.</p>
+            </div>
+            <div class="col-md-5">
+              <img src="cssimage.jpg" class="img-fluid" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      
+  <!-- Footer-->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2024 –2023 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
